@@ -1,0 +1,38 @@
+<Project>
+
+  <PropertyGroup>
+    <SourceRoot>$(MSBuildThisFileDirectory)</SourceRoot>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Georgy Krasin</Authors>
+    <Description>Flexible hash ring</Description>
+    <Product>Distrings</Product>
+    <Copyright>© Georgy Krasin. All rights reserved.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/krasin-ga/distrings</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>Hash Ring Consistent Hashing Distrings Distribution</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PublicRepositoryUrl>https://github.com/krasin-ga/distrings</PublicRepositoryUrl>
+    <PrivateRepositoryUrl>https://github.com/krasin-ga/distrings</PrivateRepositoryUrl>
+    <RepositoryUrl>https://github.com/krasin-ga/distrings</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <LangVersion>11</LangVersion>
+    <Features>strict</Features>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugType>embedded</DebugType>
+    <IncludePackageReferencesDuringMarkupCompilation>true</IncludePackageReferencesDuringMarkupCompilation>
+    <IncludeSymbols>false</IncludeSymbols>
+    <IncludeSource>false</IncludeSource>
+    <Version>1.0.0</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(SourceRoot)assets/icon.png" Pack="true" Visible="false" PackagePath="/" />
+    <None Include="$(SourceRoot)/README.md" Pack="true" Visible="false" PackagePath="/" />
+  </ItemGroup>
+
+</Project>
